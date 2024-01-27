@@ -128,38 +128,62 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
 
-            const Text(
-              'Author: Hoàng Minh Thái',
-              style: TextStyle(
-                    fontSize: 14, // thay đổi size của font chữ nè
-                    color: Color.fromARGB(255, 168, 54, 244), // thay đổi màu nè
+            Row(
+              children: [
+                const Icon(Icons.person_pin),
+                const SizedBox(width: 8),
+                const Text(
+                  'Author: Hoàng Minh Thái',
+                  style: TextStyle(
+                    fontSize: 15,
+                    color: Color.fromARGB(255, 168, 54, 244),
                   ),
-              ),
-              const SizedBox(height: 30),
-              /// tạo dòng author: Hoàng Minh Thái mặc định layout bên trái
+                ),
+                const Spacer(), // spacer() để đẩy icon qua the other side of the text on the row
+                Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: const Color.fromARGB(255, 168, 54, 244),
+                  ),
+                  child: IconButton(
+                    icon: const Icon(Icons.add),
+                    onPressed: () {
+                    },
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            /// tạo dòng author: Hoàng Minh Thái mặc định layout bên trái và icon [+] ở phía bên phải
 
             const Center(
               child: Column(
                 children: [
-                  Text(
-                    'Chào mừng bạn đến với ứng dụng tư vấn tuyển sinh trường đại học',
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 244, 54, 54),
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(Icons.chevron_left_rounded, size: 50),
+                      Text(
+                        'Chào mừng bạn đến với ứng dụng tư vấn tuyển sinh trường đại học',
+                        style: TextStyle(
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Color.fromARGB(255, 244, 54, 57),
+                        ),
+                      ),
+                      Icon(Icons.chevron_right_rounded, size: 50)
+                    ],
                   ),
-                  SizedBox(height: 10),
                 ],
               ),
             ),
             /// tạo dòng chào mừng đến app chỉnh layout center
             
             const SizedBox(
-                width: 66,
-                height: 90,
+                width: 55,
+                height: 75,
                 child: Icon(
-                  Icons.assignment_ind_rounded,
+                  Icons.menu_book_sharp,
                   size: 45,
                 ),
               ),
@@ -194,6 +218,7 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
                   color: Color.fromARGB(255, 243, 145, 33),
                   fontSize: 24,       
                 ),
+                prefixIcon: Icon(Icons.looks_one_outlined),
               ),
             ),
             const SizedBox(height: 25),
@@ -206,8 +231,9 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
                 labelText: 'Hãy nhập số điểm bạn ước tính (bằng số từ 0.0 tới 30.0):', 
                 labelStyle: TextStyle(
                   color: Color.fromARGB(255, 243, 145, 33),
-                  fontSize: 19,      
+                  fontSize: 18,      
                 ),
+                prefixIcon: Icon(Icons.looks_two_outlined),
               ),
             ),
             const SizedBox(height: 25),
@@ -220,8 +246,9 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
                 labelText: 'Hãy nhập vào số tiền bạn có thể chi trả cho một năm học (Triệu đồng):', 
                 labelStyle: TextStyle(
                   color: Color.fromARGB(255, 243, 145, 33),
-                  fontSize: 19,       
+                  fontSize: 18,       
                 ),
+                prefixIcon: Icon(Icons.looks_3_outlined)
               ),
             ),
             const SizedBox(height: 25),
