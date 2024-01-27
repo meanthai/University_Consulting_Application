@@ -106,15 +106,21 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
-        flexibleSpace: Container(
-          color: Color.fromARGB(255, 168, 54, 244), 
-          child: const FlexibleSpaceBar(
-            title: Text('University Consulting Application'),
-          ),
+        title: const Row(
+          children: [
+            Text('University Consulting Application'),
+            SizedBox(width: 10),  // tạo khoảng cách giữa title và icon nè
+            Icon(Icons.school),  // tạo icon
+          ],
         ),
+        flexibleSpace: Container(
+          color: const Color.fromARGB(255, 168, 54, 244), 
+        ),
+        // tạo thanh background có màu
       ),
-      /// tạo thanh toolbar chứa tên app
+      /// tạo thanh toolbar chứa tên app và icon
 
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -153,9 +159,8 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
                 width: 66,
                 height: 90,
                 child: Icon(
-                  Icons.wb_sunny,
+                  Icons.assignment_ind_rounded,
                   size: 45,
-                  color: Colors.orange,
                 ),
               ),
               /// tạo icon mặt trời cute cute
@@ -179,7 +184,7 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
               onChanged: (String? value) {
                 setState(() {
                   selectedMajor = value ?? 'Công nghệ thông tin';
-                  // mặc định nhé nếu biến value có giá trị null thì ngành chọn sẽ tự động chọn cntt
+                  // mặc định nhé nếu biến value có giá trị null thì ngành chọn sẽ tự động là cntt
                 });
               },
 
