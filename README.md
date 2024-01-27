@@ -3,4 +3,4 @@
 ![image](https://github.com/meanthai/University_consulting_app/assets/147926426/cfedace9-e333-42fe-bfdf-b3e26b5e3f65)
 --> Đây là ảnh giao diện hiện tại của app.
 
-#Source code mọi người có thể xem ở branch còn lại.
+#Source code mọi người có thể xem ở branch code_of_the_app.
