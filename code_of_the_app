@@ -79,7 +79,8 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
       reverseDuration: const Duration(milliseconds: 1000),
     );
     _opacityAnimation = Tween<double>(begin: 0.0, end: 1.0).animate(_animationController);
-  }/// này để chỉnh visual effects (ở đây là fade-out effect)
+  }
+  /// này để chỉnh visual effects (ở đây là fade-out effect)
   
 
   void findUniversities() {
@@ -184,12 +185,11 @@ class _UniversityFinderState extends State<UniversityFinder> with TickerProvider
                 height: 75,
                 child: Icon(
                   Icons.menu_book_sharp,
-                  size: 45,
+                  size: 60,
                 ),
               ),
-              /// tạo icon mặt trời cute cute
+              /// tạo icon quyển sách tri thức
             
-
             DropdownButtonFormField<String>(
               value: selectedMajor,
               items: ['Công nghệ thông tin', 'Kinh tế', 'Du lịch', 'Ngân hàng'].map((String major) {
