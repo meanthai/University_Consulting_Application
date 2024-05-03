@@ -1,4 +1,4 @@
-This application is an essential tool to help high school students choose suitable universities based on their desired majors, academic performance and available budgets.
+This application is an essential tool to help Vietnamese high school students choose suitable universities based on their desired majors, academic performance and available budgets.
 
 Here is the User-Interface of the application:
 
