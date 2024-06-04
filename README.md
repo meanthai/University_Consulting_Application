@@ -18,4 +18,7 @@ Here is the User-Interface of the application:
 
 - Step 3: Sử dụng ứng dụng như cách bạn muốn.
 
+  # License (MIT License):
+Please contact me if there is any issues or any desires to use my code for personal or corporate projects.
+
 
