@@ -10,5 +10,9 @@ Here is the User-Interface of the application:
 
 # Step by step guide on how to run and use this application (Hướng dẫn chạy chương trình và cách thức sử dụng ứng dụng):
 
-- Step 1: Tải extension của ngôn ngữ lập trình dart về Visual code Studio và sử dụng phần code trong file "main.dart" để chạy chương trình.
-- Step 2: 
+- Step 1: Tải extension của ngôn ngữ lập trình dart (bản mới nhất) về Visual code Studio và sao chép phần code trong file "main.dart" vào một file .dart (tự tạo mới hoặc bất kì) để chạy chương trình.
+- Step 2: Chạy chương trình bằng cách mở Terminal và nhập vào câu lệnh sau: flutter run "đường dẫn tới file chứa code của bạn". Và chọn Browser bạn muốn chạy ứng dụng.
+  ![image](https://github.com/meanthai/University_Consulting_Application/assets/147926426/adedf1bf-67f8-4064-b5eb-b745b708d621)
+- Step 3: Sử dụng ứng dụng như cách bạn muốn.
+
+
